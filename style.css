@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+*::selection {
+    background: #0ef;
+    color: #fff;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ced3f3;
+}
+
+.wrapper { 
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: url('valentine.gif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Change center to flex-end */
+    justify-content: flex-end; 
+    align-items: center;
+    /* Add padding to keep the buttons from touching the very bottom edge */
+    padding-bottom: 80px; 
+    overflow: hidden;
+}
+
+/* Delete or comment out the old img { ... } block entirely */
+
+/* Update your existing img selector to this
+.wrapper { 
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: #f1168f;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 700px;
+    height: 270px;
+    margin-top: 5px; 
+    margin-bottom: 20px; 
+    border-radius: 10px;
+}
+*/
+
+h2 {
+    font-family: 'Pacifico', cursive; /* Romantic handwritten style */
+    font-size: 1.5cm;
+    color: #ffdbef;
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Makes it pop against the GIF */
+}
+
+.btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.1cm;
+    color: rgb(151, 8, 68);
+    font-weight: 699;
+    border-radius: 30px;
+    border: 2px solid rgb(139, 11, 64);
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(36, 35, 36);
+}
+button:hover {
+    transition-delay: 0s, 1s;
+    color: #cf1773;
+    box-shadow: 
+        0 0 10px rgb(236, 11, 180),
+        0 0 20px rgb(236, 11, 180),
+        0 0 40px rgb(236, 11, 180),
+        0 0 80px rgb(236, 11, 180),
+        0 0 160px rgb(236, 11, 180); 
+}
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #f1f1f1;
+}
+button:nth-child(2) {
+    margin-right: -200px;
+    color: rgb(139, 11, 64);
+    box-shadow: none;
+}
